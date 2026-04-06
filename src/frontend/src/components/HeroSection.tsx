@@ -2,17 +2,33 @@ import { ArrowRight, ChevronDown, Phone } from "lucide-react";
 import { motion } from "motion/react";
 import { HERO_BG } from "../constants";
 
+const HERO_BG_MOBILE =
+  "/assets/dsc05749-019d620b-8d90-70ef-8382-4f4cffbb23f8.webp";
+
 export function HeroSection() {
   return (
     <section
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      style={{
-        backgroundImage: `url('${HERO_BG}')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
     >
+      {/* Desktop background */}
+      <div
+        className="absolute inset-0 hidden md:block"
+        style={{
+          backgroundImage: `url('${HERO_BG}')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
+      {/* Mobile background - DSC05749 */}
+      <div
+        className="absolute inset-0 block md:hidden"
+        style={{
+          backgroundImage: `url('${HERO_BG_MOBILE}')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/65" />
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center py-24 md:py-32">
         <motion.div
