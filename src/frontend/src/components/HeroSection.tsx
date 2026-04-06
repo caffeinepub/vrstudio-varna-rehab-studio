@@ -26,7 +26,7 @@ export function HeroSection() {
         style={{
           backgroundImage: `url('${HERO_BG_MOBILE}')`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "left center",
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/65" />

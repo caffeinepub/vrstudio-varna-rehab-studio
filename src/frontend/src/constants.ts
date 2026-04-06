@@ -7,6 +7,8 @@ export const HERO_BG =
   "/assets/dsc05730-019d620b-8ca4-741e-a474-b4f5a614b835.webp";
 export const HOME_REHAB_BG =
   "/assets/dsc05738-019d620b-8c6c-772c-bae1-4abdf7481f0a.webp";
+export const HOME_REHAB_BG_MOBILE =
+  "/assets/file-019d6319-9d1f-751f-b2d1-35a70d7f2229.png";
 
 export const GALLERY_IMAGES = [
   {
